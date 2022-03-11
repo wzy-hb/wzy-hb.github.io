@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>欢迎来到风清扬的小破站 | 风清扬的小破站</title>
+  <title>解决GitHub被墙，速度慢等问题 | 风清扬的小破站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎来到风清扬的小破站！这是我的第一篇文章。我会不定期在这个小破站分享一些有意思的东西。如果您遇到任何问题，可以在GitHub上向我提问。">
+  <meta name="description" content="dns 查询找到响应速度较低的ip地址查询工具网址举例：http:&#x2F;&#x2F;tool.chinaz.com&#x2F;dns需要查询网址: 123github.comassets-cdn.github.comgithub.global.ssl.fastly.net  修改host文件以文本方式打开路径：C:\Windows\System32\drivers\etc加入文本（ip地址根据实际情况更改） 12313">
 <meta property="og:type" content="article">
-<meta property="og:title" content="欢迎来到风清扬的小破站">
-<meta property="og:url" content="http://example.com/2022/03/11/hello-world/index.html">
+<meta property="og:title" content="解决GitHub被墙，速度慢等问题">
+<meta property="og:url" content="http://example.com/2022/03/11/quick-access-github/index.html">
 <meta property="og:site_name" content="风清扬的小破站">
-<meta property="og:description" content="欢迎来到风清扬的小破站！这是我的第一篇文章。我会不定期在这个小破站分享一些有意思的东西。如果您遇到任何问题，可以在GitHub上向我提问。">
+<meta property="og:description" content="dns 查询找到响应速度较低的ip地址查询工具网址举例：http:&#x2F;&#x2F;tool.chinaz.com&#x2F;dns需要查询网址: 123github.comassets-cdn.github.comgithub.global.ssl.fastly.net  修改host文件以文本方式打开路径：C:\Windows\System32\drivers\etc加入文本（ip地址根据实际情况更改） 12313">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-11T13:23:59.226Z">
-<meta property="article:modified_time" content="2022-03-11T10:36:41.328Z">
+<meta property="article:published_time" content="2022-03-11T10:43:43.000Z">
+<meta property="article:modified_time" content="2022-03-11T10:50:14.923Z">
 <meta property="article:author" content="风清扬">
 <meta name="twitter:card" content="summary">
   
@@ -154,27 +154,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-quick-access-github" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      欢迎来到风清扬的小破站
+      解决GitHub被墙，速度慢等问题
     </h1>
   
 
         
-        <a href="/2022/03/11/hello-world/" class="archive-article-date">
-  	<time datetime="2022-03-11T13:23:59.226Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-11</time>
+        <a href="/2022/03/11/quick-access-github/" class="archive-article-date">
+  	<time datetime="2022-03-11T10:43:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>欢迎来到风清扬的小破站！这是我的第一篇文章。我会不定期在这个小破站分享一些有意思的东西。如果您遇到任何问题，可以在<a target="_blank" rel="noopener" href="https://github.com/wzy-hb/wzy-hb.github.io/issues">GitHub</a>上向我提问。</p>
+        <ol>
+<li><p>dns 查询<br>找到响应速度较低的ip地址<br>查询工具网址举例：<a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns">http://tool.chinaz.com/dns</a><br>需要查询网址:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">github.com</span><br><span class="line">assets-cdn.github.com</span><br><span class="line">github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改host文件<br>以文本方式打开<br>路径：C:\Windows\System32\drivers\etc<br>加入文本（ip地址根据实际情况更改）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">13.250.177.223 github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br><span class="line">128.121.146.228 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>刷新系统dns缓存（linux 不需要）<br>用WIN+R快捷键打开运行窗口，输入命令：cmd并回车进入命令行窗口。<br>接着输入命令：ipconfig &#x2F;flushdns回车后执行刷新本地dns缓存数据即可。</p>
+</li>
+</ol>
+<p>结果：网页打开速度2s 左右，下载速度仍不理想，几十k</p>
 
       
 
@@ -254,7 +264,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/03/11/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/03/11/quick-access-github/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,11 +278,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2022/03/11/quick-access-github/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">解决GitHub被墙，速度慢等问题</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2022/03/11/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          欢迎来到风清扬的小破站
+        
+      </div>
     </a>
+  
   
 </nav>
 
