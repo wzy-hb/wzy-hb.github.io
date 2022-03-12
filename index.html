@@ -73,6 +73,8 @@
 				
 					<a class="github" target="_blank" href="https://github.com/wzy-hb" title="github"><i class="icon-github"></i></a>
 		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/326144489/" title="bilibili"><i class="icon-bilibili"></i></a>
+		        
 			</div>
 		</nav>
 	</header>		
@@ -105,6 +107,8 @@
 				<div class="social">
 					
 						<a class="github" target="_blank" href="https://github.com/wzy-hb" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/326144489/" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -150,13 +154,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>欢迎来到风清扬的小破站！这是我的第一篇文章。我会不定期在这个小破站分享一些有意思的东西。如果您遇到任何问题，可以在<a target="_blank" rel="noopener" href="https://github.com/wzy-hb/wzy-hb.github.io/issues">GitHub</a>上向我提问。</p>
+        <p><strong>欢迎来到风清扬的小破站！这是我的第一篇文章。我会不定期在这个小破站分享一些有意思的东西。如果您遇到任何问题，可以在<a target="_blank" rel="noopener" href="https://github.com/wzy-hb/wzy-hb.github.io/issues">GitHub</a>上向我提问。</strong></p>
 
       
 
       
     </div>
     <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
       
       
       
@@ -193,36 +202,33 @@
 
 
   
-    <article id="post-quick-access-github" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-解决GitHub无法访问、速度慢等问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/11/quick-access-github/">解决GitHub被墙，速度慢等问题</a>
+      <a class="article-title" href="/2022/03/12/%E8%A7%A3%E5%86%B3GitHub%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E3%80%81%E9%80%9F%E5%BA%A6%E6%85%A2%E7%AD%89%E9%97%AE%E9%A2%98/">解决GitHub无法访问、速度慢等问题</a>
     </h1>
   
 
         
-        <a href="/2022/03/11/quick-access-github/" class="archive-article-date">
-  	<time datetime="2022-03-11T10:43:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-11</time>
+        <a href="/2022/03/12/%E8%A7%A3%E5%86%B3GitHub%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E3%80%81%E9%80%9F%E5%BA%A6%E6%85%A2%E7%AD%89%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2022-03-12T08:45:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li><p>dns 查询<br>找到响应速度较低的ip地址<br>查询工具网址举例：<a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns">http://tool.chinaz.com/dns</a><br>需要查询网址:</p>
+        <p>1.dns 查询<br>找到响应速度较低的ip地址<br>查询工具网址举例：<a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns">http://tool.chinaz.com/dns</a><br>需要查询网址:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">github.com</span><br><span class="line">assets-cdn.github.com</span><br><span class="line">github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改host文件<br>以文本方式打开<br>路径：C:\Windows\System32\drivers\etc<br>加入文本（ip地址根据实际情况更改）</p>
+
+<p>2.修改host文件<br>以文本方式打开<br>路径：C:\Windows\System32\drivers\etc<br>加入文本（ip地址根据实际情况更改）</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">13.250.177.223 github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br><span class="line">128.121.146.228 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>刷新系统dns缓存（linux 不需要）<br>用WIN+R快捷键打开运行窗口，输入命令：cmd并回车进入命令行窗口。<br>接着输入命令：ipconfig &#x2F;flushdns回车后执行刷新本地dns缓存数据即可。</p>
-</li>
-</ol>
+
+<p>3.刷新系统dns缓存（linux 不需要）<br>用WIN+R快捷键打开运行窗口，输入命令：cmd并回车进入命令行窗口。<br>接着输入命令：ipconfig &#x2F;flushdns回车后执行刷新本地dns缓存数据即可。</p>
 <p>结果：网页打开速度2s 左右，下载速度仍不理想，几十k</p>
 
       
@@ -247,7 +253,100 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/11/quick-access-github/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/03/12/%E8%A7%A3%E5%86%B3GitHub%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E3%80%81%E9%80%9F%E5%BA%A6%E6%85%A2%E7%AD%89%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-一行代码修改任意网页内容" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/03/12/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BB%BB%E6%84%8F%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9/">一行代码修改任意网页内容</a>
+    </h1>
+  
+
+        
+        <a href="/2022/03/12/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BB%BB%E6%84%8F%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9/" class="archive-article-date">
+  	<time datetime="2022-03-12T07:25:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>操作如下：</p>
+<p>1.在网页中点击F12，任意页面都行。</p>
+<p>2.在弹出的调试面板最上面选中Console，然后输入下面这行代码，回车。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.body.contentEditable=&#x27;true&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.designMode=&#x27;on&#x27;</span><br></pre></td></tr></table></figure>
+<p>如图所示：</p>
+<img src="/2022/03/12/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BB%BB%E6%84%8F%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9/01.PNG" class="" title="[title]">
+
+<p>3.出现’true’，整个网页你可以随便编辑了。</p>
+<p>4.关闭编辑模式，同理，输入下面这行代码，回车即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.body.contentEditable=&#x27;false&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.designMode=&#x27;off&#x27;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">代码</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/03/12/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BB%BB%E6%84%8F%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9/">展开全文 >></a>
         </p>
       
 
@@ -289,9 +388,9 @@
     	<div class="footer-left">
     		&copy; 2022 风清扬
     	</div>
-      	<div class="footer-right">
+      	<!-- <div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+      	</div> -->
     </div>
   </div>
 </footer>
@@ -360,6 +459,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">代码</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">GitHub</a>
