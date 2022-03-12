@@ -68,6 +68,12 @@
     			
             
 		</nav>
+		<nav>
+			<ul style="font-size:12px; font-style:oblique; font-weight:100">
+				总文章数：3
+			</ul>
+		</nav>
+		<br/>
 		<nav class="header-nav">
 			<div class="social">
 				
@@ -224,13 +230,9 @@
       
         <p>1.dns 查询<br>找到响应速度较低的ip地址<br>查询工具网址举例：<a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns">http://tool.chinaz.com/dns</a><br>需要查询网址:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">github.com</span><br><span class="line">assets-cdn.github.com</span><br><span class="line">github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-
-<p>2.修改host文件<br>以文本方式打开<br>路径：C:\Windows\System32\drivers\etc<br>加入文本（ip地址根据实际情况更改）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">13.250.177.223 github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br><span class="line">128.121.146.228 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-
-<p>3.刷新系统dns缓存（linux 不需要）<br>用WIN+R快捷键打开运行窗口，输入命令：cmd并回车进入命令行窗口。<br>接着输入命令：ipconfig &#x2F;flushdns回车后执行刷新本地dns缓存数据即可。</p>
-<p>结果：网页打开速度2s 左右，下载速度仍不理想，几十k</p>
-
+        
+          <a class="article-more-a" href="/2022/03/12/%E8%A7%A3%E5%86%B3GitHub%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E3%80%81%E9%80%9F%E5%BA%A6%E6%85%A2%E7%AD%89%E9%97%AE%E9%A2%98/#more">more >></a>
+        
       
 
       
@@ -310,16 +312,9 @@
 
 <p>或者</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.designMode=&#x27;on&#x27;</span><br></pre></td></tr></table></figure>
-<p>如图所示：</p>
-<img src="/2022/03/12/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BB%BB%E6%84%8F%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9/01.PNG" class="" title="[title]">
-
-<p>3.出现’true’，整个网页你可以随便编辑了。</p>
-<p>4.关闭编辑模式，同理，输入下面这行代码，回车即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.body.contentEditable=&#x27;false&#x27;;</span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.designMode=&#x27;off&#x27;</span><br></pre></td></tr></table></figure>
-
+        
+          <a class="article-more-a" href="/2022/03/12/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BB%BB%E6%84%8F%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9/#more">more >></a>
+        
       
 
       
@@ -393,6 +388,17 @@
       	</div> -->
     </div>
   </div>
+  <!-- 根据个人喜好在相应位置添加以下代码 -->
+	<div calss="count-span">
+		<span id="busuanzi_container_site_pv">
+			总访问量: <span id="busuanzi_value_site_pv"></span>次|
+		</span>
+		<span id="busuanzi_container_site_uv">
+			总访客量: <span id="busuanzi_value_site_uv"></span>人次
+		</span>
+	</div>
+<!-- 根据个人喜好在相应位置添加以上代码 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </footer>
     </div>
     <script>
